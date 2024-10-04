@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -8,11 +8,11 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.100.785.0 (21.12)"
+        "value": "2.127.1235.0 (24.03)"
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Accounts\",\"Industries\",\"Opportunities\",\"Owners\",\"Products\",\"Contacts\",\"Territories\",\"Campaigns\"]"
+        "value": "[\"Accounts\",\"Industries\",\"Opportunities\",\"Owners\",\"Products\",\"Contacts\",\"Territories\",\"Campaigns\",\"SRC_URL\"]"
       }
     ],
     "culture": "en-US",
@@ -21,7 +21,6 @@
         "name": "en-US",
         "linguisticMetadata": {
           "content": {
-            "DynamicImprovement": "HighConfidence",
             "Entities": {
               "account": {
                 "Definition": {
@@ -10555,6 +10554,24 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "SRC_URL",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"AAAAAA\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "8c4ebbf2-4911-45b7-a14e-6029ddb55bdd"
+      }
+    ],
     "relationships": [
       {
         "name": "ab2e21ab-c232-41ff-83dc-8e3b0d908f5e",
@@ -10634,10 +10651,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -10651,10 +10664,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataCategory": "StateOrProvince",
@@ -10669,10 +10678,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataCategory": "Country",
@@ -10687,14 +10692,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
@@ -10709,14 +10711,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -10732,14 +10731,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -10755,14 +10751,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -10778,10 +10771,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -10795,14 +10784,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -10871,10 +10857,11 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
+          }
+        ],
+        "changedProperties": [
           {
-            "name": "PBI_ChangedProperties",
-            "value": "[\"IsHidden\"]"
+            "property": "IsHidden"
           }
         ],
         "columns": [
@@ -10884,10 +10871,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -10901,14 +10884,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -10958,10 +10938,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -10975,10 +10951,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Boolean\" />"
               }
             ],
             "dataType": "boolean",
@@ -10993,10 +10965,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11010,10 +10978,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11029,12 +10993,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"0\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
-              },
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11050,14 +11015,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
+                "property": "FormatString"
               }
             ],
             "dataType": "int64",
@@ -11087,10 +11049,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -11105,10 +11063,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Percentage\" Accuracy=\"1\" />"
               }
             ],
             "dataType": "double",
@@ -11123,10 +11077,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Percentage\" Accuracy=\"1\" />"
               }
             ],
             "dataType": "double",
@@ -11141,10 +11091,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11158,10 +11104,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               },
               {
                 "name": "__PBI_SemanticLinks",
@@ -11182,14 +11124,14 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
               },
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\",\"IsHidden\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Percentage\" Accuracy=\"1\" ThousandSeparator=\"True\" />"
+                "property": "IsHidden"
               }
             ],
             "dataType": "double",
@@ -11205,14 +11147,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11228,14 +11167,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11251,14 +11187,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11274,14 +11207,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11297,14 +11227,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11320,10 +11247,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -11340,14 +11263,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11367,14 +11287,11 @@
               {
                 "name": "UnderlyingDateTimeDataType",
                 "value": "Date"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"ShortDate\" FormatString=\"d\" /></DateTimes></Format>"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
+                "property": "FormatString"
               }
             ],
             "dataType": "dateTime",
@@ -11395,12 +11312,13 @@
                 "value": "Date"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeCustom\"><DateTimes><DateTime LCID=\"1033\" Group=\"ShortDate\" FormatString=\"M/d/yyyy\" /></DateTimes></Format>"
-              },
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
+                "property": "FormatString"
               }
             ],
             "dataType": "dateTime",
@@ -11419,10 +11337,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -11471,14 +11385,9 @@
         "measures": [
           {
             "name": "Revenue Won",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": [
@@ -11493,14 +11402,9 @@
           },
           {
             "name": "Revenue In Pipeline",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": [
@@ -11523,12 +11427,6 @@
           },
           {
             "name": "Forecast %",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Percentage\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              }
-            ],
             "expression": "(([Revenue Won]+[Revenue In Pipeline]))/ [Rev Goal]",
             "formatString": "#,0%;-#,0%;#,0%",
             "lineageTag": "78a5c219-6674-49f8-a2c5-4da21114763d"
@@ -11537,8 +11435,8 @@
             "name": "Forecast",
             "annotations": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
               }
             ],
             "expression": "([Revenue Won]+[Revenue In Pipeline])",
@@ -11547,12 +11445,6 @@
           },
           {
             "name": "Opportunity Count In Pipeline",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              }
-            ],
             "expression": [
               "",
               "    CALCULATE (",
@@ -11570,12 +11462,6 @@
           },
           {
             "name": "Opportunity Count",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              }
-            ],
             "expression": [
               "",
               "COUNTAX(Opportunities,TRUE())"
@@ -11585,12 +11471,6 @@
           },
           {
             "name": "Count of Won",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              }
-            ],
             "expression": [
               "",
               "COUNTAX(",
@@ -11605,12 +11485,6 @@
           },
           {
             "name": "Count of Lost",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
-              }
-            ],
             "expression": [
               "",
               "COUNTAX(",
@@ -11625,26 +11499,15 @@
           },
           {
             "name": "Close %",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Percentage\" Accuracy=\"1\" />"
-              }
-            ],
             "expression": "[Count of Won]/([Count of Won]+[Count of Lost])",
             "formatString": "0.0%;-0.0%;0.0%",
             "lineageTag": "938be727-4972-4ef9-a507-da6a1d898703"
           },
           {
             "name": "Revenue Open",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": [
@@ -11665,14 +11528,9 @@
           },
           {
             "name": "Revenue Won Average Deal Size",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"0\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": "AVERAGEX(Opportunities,[Revenue Won])",
@@ -11681,14 +11539,9 @@
           },
           {
             "name": "Forecast by Win/Loss Ratio",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": "[Revenue Open] * [Close %]",
@@ -11740,10 +11593,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11757,10 +11606,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11774,14 +11619,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11797,14 +11639,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
@@ -11818,14 +11657,9 @@
         "measures": [
           {
             "name": "Rev Goal",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"0\" DisplayName=\"Currency General\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+                "property": "FormatString"
               }
             ],
             "expression": [
@@ -11887,10 +11721,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11904,14 +11734,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -11927,10 +11754,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -11969,10 +11792,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "User"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12000,14 +11819,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -12031,12 +11847,6 @@
           },
           {
             "name": "Fcst adj slicer alt text",
-            "annotations": [
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
-              }
-            ],
             "expression": "CONCATENATE(\"Use the slicer to adjust the forecast, current value is \", 'Opportunity Forecast Adjustment'[Forecast Adjustment Value])",
             "lineageTag": "7150d622-ec0d-4e6a-a1c9-f510cac30c7f"
           }
@@ -12063,16 +11873,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"ShortDate\" FormatString=\"M/d/yyyy\" /></DateTimes></Format>"
-              },
-              {
                 "name": "UnderlyingDateTimeDataType",
                 "value": "Date"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"DataType\"]"
+                "property": "DataType"
               }
             ],
             "dataType": "dateTime",
@@ -12092,16 +11899,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"ShortDate\" FormatString=\"M/d/yyyy\" /></DateTimes></Format>"
-              },
-              {
                 "name": "UnderlyingDateTimeDataType",
                 "value": "Date"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"DataType\"]"
+                "property": "DataType"
               }
             ],
             "dataType": "dateTime",
@@ -12120,10 +11924,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12142,10 +11942,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12163,10 +11959,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12185,10 +11977,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12206,10 +11994,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12228,10 +12012,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12249,10 +12029,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12269,10 +12045,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
               }
             ],
             "dataType": "dateTime",
@@ -12292,8 +12064,8 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"General\" />"
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
@@ -12310,10 +12082,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
               }
             ],
             "dataType": "dateTime",
@@ -12333,8 +12101,8 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"General\" />"
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
@@ -12353,8 +12121,8 @@
                 "value": "Automatic"
               },
               {
-                "name": "Format",
-                "value": "<Format Format=\"General\" />"
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
@@ -12371,10 +12139,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
               }
             ],
             "dataType": "int64",
@@ -12471,10 +12235,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12488,10 +12248,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12505,14 +12261,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -12528,14 +12281,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -12575,10 +12325,11 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
+          }
+        ],
+        "changedProperties": [
           {
-            "name": "PBI_ChangedProperties",
-            "value": "[\"IsHidden\"]"
+            "property": "IsHidden"
           }
         ],
         "columns": [
@@ -12588,10 +12339,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12605,10 +12352,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12622,14 +12365,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
@@ -12644,14 +12384,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
@@ -12666,10 +12403,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12717,14 +12450,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
-              },
-              {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "int64",
@@ -12740,10 +12470,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
@@ -12757,10 +12483,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />"
               }
             ],
             "dataType": "string",
