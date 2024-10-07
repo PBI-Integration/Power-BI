@@ -69,7 +69,27 @@
       "name": "Pod6"
     }
   ],
+  "publicCustomVisuals": [],
   "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ContosofDataverse_1600x1600_-_5729987410217916.png",
+            "path": "ContosofDataverse_1600x1600_-_5729987410217916.png",
+            "type": 100
+          },
+          {
+            "name": "Fidex8576514545124847.json",
+            "path": "Fidex8576514545124847.json",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
     {
       "resourcePackage": {
         "disabled": false,
@@ -91,27 +111,9 @@
     },
     {
       "resourcePackage": {
+        "disabled": false,
         "items": [
           {
-            "name": "ContosofDataverse_1600x1600_-_5729987410217916.png",
-            "path": "ContosofDataverse_1600x1600_-_5729987410217916.png",
-            "type": 100
-          },
-          {
-            "name": "Fidex8576514545124847.json",
-            "path": "Fidex8576514545124847.json",
-            "type": 100
-          }
-        ],
-        "name": "RegisteredResources",
-        "type": 1
-      }
-    },
-    {
-      "resourcePackage": {
-        "items": [
-          {
-            "name": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A.pbiviz.json",
             "path": "FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A.pbiviz.json",
             "type": 5
           }
