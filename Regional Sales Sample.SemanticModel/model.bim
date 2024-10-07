@@ -13,6 +13,10 @@
       {
         "name": "PBI_QueryOrder",
         "value": "[\"Accounts\",\"Industries\",\"Opportunities\",\"Owners\",\"Products\",\"Contacts\",\"Territories\",\"Campaigns\",\"SRC_URL\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
       }
     ],
     "culture": "en-US",
@@ -10567,7 +10571,7 @@
             "value": "Text"
           }
         ],
-        "expression": "\"DDDDDDD\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "expression": "\"AAAAAA\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
         "kind": "m",
         "lineageTag": "8c4ebbf2-4911-45b7-a14e-6029ddb55bdd"
       }
